@@ -1,0 +1,47 @@
+.myrow {
+    background-color: aquamarine;
+}
+
+.secondrow {
+    background-color: beige;
+}
+
+.search-box i {
+    position: absolute;
+    color: #e6123d;
+    left: 7px;
+    top: 5px;
+}
+
+#downarrow {
+    position: absolute;
+    color: #e6123d;
+    left: 12px;
+    top: 10px;
+}
+
+.profile i {
+    color: #e6123d;
+}
+
+.search-box input {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    width: 600px;
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 10px;
+    border-left: 1px rgb(186, 186, 186) solid;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+.btn {
+    width: 60px;
+}
