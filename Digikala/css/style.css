@@ -1,4 +1,5 @@
 .myrow {
+    padding-top: 5px;
     background-color: aquamarine;
 }
 
@@ -6,11 +7,35 @@
     background-color: beige;
 }
 
+.logo {
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.search-box input {
+    height: 40px;
+}
+
 .search-box i {
     position: absolute;
     color: #e6123d;
     left: 7px;
-    top: 5px;
+    top: 12px;
+}
+
+.location i {
+
+    font-weight: bold;
+    color: #e6123d;
+}
+
+.location-btn {
+    width: 140px !important;
+    max-height: 40px;
 }
 
 #downarrow {
@@ -28,7 +53,7 @@
     border: none;
     border-radius: 5px;
     background-color: rgb(225, 225, 225);
-    width: 600px;
+    width: 500px;
     outline: none;
 }
 
@@ -44,4 +69,153 @@ ul li:last-child {
 
 .btn {
     width: 60px;
+}
+
+.dropdown-menu-location {
+    position: absolute;
+    display: none;
+}
+
+.location:hover .dropdown-menu-location {
+    display: block;
+}
+
+.dropdown-menu-location {
+    position: absolute;
+    left: 12px;
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background-color: #b6596c5b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown-location>.dropdown-toggle-location:active {
+    pointer-events: none;
+}
+
+.slider-col {
+    padding: 0;
+}
+
+.services {
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.services img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.services a {
+    text-decoration: none;
+    color: rgb(9, 9, 11);
+}
+
+.services figcaption {
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.hover-1 {
+    --s: 0.1em;
+    /* the thickness of the line */
+    --c: #db5588be;
+    /* the color */
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background:
+        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.hover-1:hover {
+    --_p: 100%
+}
+
+.offer-section {
+    padding-top: 10px;
+
+}
+
+.offer-section img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer button {
+    border: 1px gray solid;
+
+    width: 140px;
+}
+
+.footer i {
+    top: 10px;
+    right: 115px;
+    position: relative;
+}
+
+.ttop-btn {
+    padding-right: 0;
+    text-align: right;
+    width: 150px;
+}
+
+.info ul {
+    padding-top: 10px;
+}
+
+.perks {
+
+    text-align: center;
+}
+
+.perks a {
+    text-decoration: none;
+    color: rgb(22, 16, 62);
+}
+
+.more-info li {
+    padding-bottom: 10px;
+    border: none;
+}
+
+.li-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
+.contact-us i {
+    margin-top: 10px;
+    margin: 0px !important;
+    font-size: 30px;
+}
+
+.contact-us img {
+    margin-top: -10px;
+    width: 30px;
+}
+
+.myform {
+    background-color: rgb(237, 237, 237);
+}
+
+.mybtn {
+    text-align: center;
+    background-color: rgb(199, 199, 199);
 }
