@@ -1,19 +1,10 @@
 .myrow {
     padding-top: 5px;
-    background-color: aquamarine;
-}
-
-.secondrow {
-    background-color: beige;
 }
 
 .logo {
     box-sizing: border-box;
     padding-top: 5px;
-}
-
-.container-fluid {
-    padding: 0;
 }
 
 .search-box input {
@@ -28,7 +19,6 @@
 }
 
 .location i {
-
     font-weight: bold;
     color: #e6123d;
 }
@@ -81,19 +71,25 @@ ul li:last-child {
 }
 
 .dropdown-menu-location {
+    margin-top: 10px;
+    color: whitesmoke;
     position: absolute;
     left: 12px;
     box-sizing: border-box;
     padding: 0;
     padding-right: 10px;
     padding-bottom: 5px;
-    background-color: #b6596c5b;
+    background-color: #b8243fe1;
     border-radius: 5px;
     text-align: center;
 }
 
 .dropdown-location>.dropdown-toggle-location:active {
     pointer-events: none;
+}
+
+.slidercontainer {
+    padding-top: 110px;
 }
 
 .slider-col {
@@ -129,12 +125,9 @@ ul li:last-child {
     /* the thickness of the line */
     --c: #db5588be;
     /* the color */
-
     color: #0000;
     padding-bottom: var(--s);
-    background:
-        linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
-        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     transition: 0.5s;
@@ -146,7 +139,6 @@ ul li:last-child {
 
 .offer-section {
     padding-top: 10px;
-
 }
 
 .offer-section img {
@@ -157,7 +149,6 @@ ul li:last-child {
 
 .footer button {
     border: 1px gray solid;
-
     width: 140px;
 }
 
@@ -178,7 +169,6 @@ ul li:last-child {
 }
 
 .perks {
-
     text-align: center;
 }
 
@@ -197,7 +187,6 @@ ul li:last-child {
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 10px;
-
 }
 
 .contact-us i {
@@ -212,10 +201,14 @@ ul li:last-child {
 }
 
 .myform {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(247, 247, 247);
 }
 
 .mybtn {
     text-align: center;
     background-color: rgb(199, 199, 199);
+}
+
+.footer-color {
+    background-color: rgb(235, 235, 235);
 }

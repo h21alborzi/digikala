@@ -2,279 +2,326 @@
 <html lang="fa" dir="rtl">
 
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="css/bootstrap.rtl.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/86c7221215.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/86c7221215.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid position-sticky">
-      <div class="container-fluid position-relative">
-        <div class="row myrow justify-content-end">
-          <div class="col logo col-auto">
-            <img src="images/logo.svg" alt="logo">
-          </div>
-          <div class="col position-relative">
-            <div class="search-box d-inline-block position-relative  	d-none d-sm-none d-md-none d-lg-inline-block">
-              <input type="text" placeholder="جست‌وجو... ">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div class="col profile col-auto align-self-end">
-            <ul>
-              <li class="list-inline-item position-relative">
-                <button type="button" class="btn hover-1"><i class="fa-regular fa-user"></i><i
+    <header>
+        <div class="container-fluid position-fixed z-3 bg-white shadow-lg">
+            <div class="container-fluid position-relative">
+                <div class="row myrow d-none d-lg-flex  justify-content-end">
+                    <div class="col logo col-auto">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                    <div class="col position-relative">
+                        <div class="search-box d-inline-block position-relative  	d-none d-sm-none d-md-none d-lg-inline-block">
+                            <input type="text" placeholder="جست‌وجو... ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="col profile col-auto align-self-end">
+                        <ul>
+                            <li class="list-inline-item position-relative">
+                                <button type="button" class="btn hover-1"><i class="fa-regular fa-user"></i><i
                     class="fa-solid fa-caret-down" id="downarrow"></i></button>
-              </li>
+                            </li>
 
-              <li class="list-inline-item "><button type="button" class="btn hover-1"><i
-                    class="fa-regular fa-cart-shopping fw-bold "></i></button></i></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row secondrow justify-content-end">
-          <div class="col">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand " href="#">دسته بندی کالاها</a>
+                            <li class="list-inline-item "><button type="button" class="btn hover-1"><i
+                    class="fa-regular fa-cart-shopping fw-bold "></i></button></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row myrow-small d-lg-none justify-content-between">
+                    <div class="col col-4 text-start ">
+                        <ul class="ps-0">
+                            <li class="list-inline-item position-relative  ">
+                                <button type="button" class="btn hover-1"><i class="fa-regular fa-user"></i>
+                                  <i class="fa-solid fa-caret-down" id="downarrow"></i>
+                                  </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-4 logo text-center ">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                    <div class="col  profile col-4 text-end">
+                        <ul>
+                            <li class="list-inline-item"><button type="button" class="btn hover-1"><i
+                    class="fa-regular fa-cart-shopping fw-bold "></i></button></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row secondrow justify-content-end">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <i class="fa-solid fa-list fa-rotate-180 ps-3 pb-1 d-none d-lg-block"></i>
+                            <a class="navbar-brand " href="#">دسته بندی کالاها</a>
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link hover-1" href="#">سوپرمارکت <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link hover-1" href="#">پرفروش‌ترین‌ها</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hover-1" href="#" id="navbarDropdown" role="button"
-                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link hover-1" href="#">سوپرمارکت <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link hover-1" href="#">پرفروش‌ترین‌ها</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle hover-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       تخفیف‌ها و پیشنهاد‌ها
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">موبایل</a>
-                      <a class="dropdown-item" href="#">کامپیوتر</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">لوازم جانبی</a>
-                    </div>
-                  </li>
-                </ul>
-                <div class="col location align-self-end">
-                  <button class="button btn location-btn dropdown-toggle-location position-relative hover-1"
-                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown-location"
-                    aria-expanded="false"><span>ارسال به
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">موبایل</a>
+                                            <a class="dropdown-item" href="#">کامپیوتر</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">لوازم جانبی</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="col location align-self-end">
+                                    <button class="button btn location-btn dropdown-toggle-location position-relative hover-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown-location" aria-expanded="false"><span>ارسال به
                       تهران</span><i class="fa-solid fa-location-dot"></i>
                     <div class="location-menu ">
                       <ul class="dropdown-menu-location" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="#">ارسال به تهران</a></li>
                     </div>
                   </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-              </div>
-            </nav>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="container-fluid slidercontainer">
-    <div class="row slider-row">
-      <div class="col slider-col">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="#"> <img src="images/1.webp" class="d-block w-100" alt="1">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </a>
-            </div>
-            <div class="carousel-item"><a href="#"> <img src="images/2.webp" class="d-block w-100" alt="2">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </a>
+    </header>
+    <div class="container-fluid slidercontainer">
+        <div class="row slider-row">
+            <div class="col slider-col">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#"> <img src="images/1.webp" class="d-block w-100" alt="1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"> <img src="images/2.webp" class="d-block w-100" alt="2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </a>
 
-            </div>
-            <div class="carousel-item">
-              <a href="#"> <img src="images/3.webp" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"> <img src="images/3.webp" class="d-block w-100" alt="3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
-      </div>
-    </div>
-    <div class="container justify-content-around ">
-      <div class="row  services ">
-        <div class="col col-sm-3 col-lg-1 offset-lg-2"><a href="#"> <img src="images/game.png" alt="گیم نت">
-            <figcaption>گیم نت</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1 "><a href="#"> <img src="images/gift.png" alt="هدیه دیجی‌پلاس">
-            <figcaption>هدیه دیجی‌پلاس</figcaption>
-          </a>
-        </div>
-        <div class="col col-sm-3 col-lg-1"><a href="#"> <img src="images/jet.png" alt="دیجی‌کالا جت">
-            <figcaption>دیجی‌کالا جت</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1"><a href="#"> <img src="images/org.png" alt="خرید سازمانی">
-            <figcaption>خرید سازمانی</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1 "><a href="#"> <img src="images/pay.png" alt="خرید اقساطی">
-            <figcaption>خرید اقساطی</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1"><a href="#"> <img src="images/sale.png" alt="حراج">
-            <figcaption>حراج</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1 "><a href="#"> <img src="images/wed2.png" alt="خرید جهیزیه">
-            <figcaption>خرید جهیزیه</figcaption>
-          </a></div>
-        <div class="col col-sm-3 col-lg-1"><a href="#">
-            <img src="images/wed.png" alt="بیشتر">
-            <figcaption>بیشتر</figcaption>
-          </a></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row row-cols-2 row-cols-lg-4 offer-section">
-        <div class="col"><a href="#"><img src="images/11.webp" alt="11"></a></div>
-        <div class="col"><a href="#"><img src="images/22.webp" alt="22"></a></div>
-        <div class="col"><a href="#"><img src="images/33.webp" alt="33"></a></div>
-        <div class="col"><a href="#"><img src="images/44.webp" alt="44"></a></div>
-      </div>
-    </div>
-  </div>
-
-
-  <footer>
-    <div class="container-fluid">
-      <div class="container">
-        <hr>
-        <div class="row footer d-flex justify-content-between">
-          <div class="col-auto"><img src="images/logo-fa.svg" alt=""></div>
-          <div class="col-auto ttop-btn"><button class="btn  position-absolute">برگشت به بالا</button><i
-              class="fa-solid fa-chevron-up"></i></div>
-        </div>
-        <div class="row info">
-          <ul class="list-inline">
-            <li class="list-inline-item">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</li>
-            <li class="list-inline-item">
-              ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</li>
-          </ul>
-        </div>
-        <div class="row d-sm-none d-lg-flex  perks justify-content-between ">
-          <div class="col-auto hover-1"><a href=""><img src="images/express-delivery.svg" alt="1">
-              <figcaption>امکان تحویل اکپرس</figcaption>
-            </a>
-          </div>
-          <div class="col-auto hover-1"><a href=""><img src="images/cash-on-delivery.svg" alt="2">
-              <figcaption>امکان پرداخت در محل</figcaption>
-            </a>
-          </div>
-          <div class="col-auto hover-1"><a href=""><img src="images/support.svg" alt="3">
-              <figcaption>۷ روز هفته، ۲۴ ساعته</figcaption>
-            </a>
-          </div>
-          <div class="col-auto hover-1"><a href=""><img src="images/days-return.svg" alt="4">
-              <figcaption>۷ روز ضمانت بازگشت</figcaption>
-            </a>
-          </div>
-          <div class="col-auto hover-1"><a href=""><img src="images/original-products.svg" alt="5">
-              <figcaption>ضمانت اصل بودن کالا</figcaption>
-            </a>
-          </div>
-        </div>
-        <div class="row more-info">
-          <div class="col">
-            <ul>
-              <li class="li-title">با دیجی‌کالا</li>
-              <li>اتاق خبر دیجی‌کالا</li>
-              <li>فروش در دیجی‌کالا</li>
-              <li>فرصت‌های شغلی</li>
-              <li>تماس با دیجی‌کالا</li>
-              <li>درباره دیجی‌کالا</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="li-title">خدمات مشتریان</li>
-              <li>پاسخ به پرسش‌های متداول</li>
-              <li>رویه‌های بازگرداندن کالا</li>
-              <li>حریم خصوصی</li>
-              <li>شرایط استفاده</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li class="li-title">راهنمای خرید از دیجی‌کالا</li>
-              <li>نحوه ثبت سفارش</li>
-              <li>رویه ارسال سفارش</li>
-              <li>شیوه‌های پرداخت</li>
-            </ul>
-          </div>
-          <div class="col contact-us">
-            <ul>
-              <li>همراه ما باشید!</li>
-              <li>
-                <ul class="list-inline">
-                  <li class="list-inline-item"><i class="fa-brands fa-instagram"></i></li>
-                  <li class="list-inline-item"><i class="fa-brands fa-twitter"></i></li>
-                  <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i></li>
-                  <li class="list-inline-item align-self-start"><img src="images/aparat.svg" alt="aparat"></li>
-                </ul>
-              </li>
-              <li>با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</li>
-              <li>
-                <div class="row mb-3">
-                  <div class="col-11"><input type="text" class="form-control myform" placeholder="ایمیل شما"
-                      aria-label="Recipient's username" aria-describedby="button-addon2"></div>
-                  <div class="col-1 p-0"><button class="btn mybtn" type="button" id="button-addon2">ثبت</button></div>
-
                 </div>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-
-      </div>
-
+        <div class="container justify-content-around ">
+            <div class="row row-cols-2 services ">
+                <div class="col col-sm-3 col-lg-1 offset-lg-2">
+                    <a href="#"> <img src="images/game.png" alt="گیم نت">
+                        <figcaption>گیم نت</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1 ">
+                    <a href="#"> <img src="images/gift.png" alt="هدیه دیجی‌پلاس">
+                        <figcaption>هدیه دیجی‌پلاس</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1">
+                    <a href="#"> <img src="images/jet.png" alt="دیجی‌کالا جت">
+                        <figcaption>دیجی‌کالا جت</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1">
+                    <a href="#"> <img src="images/org.png" alt="خرید سازمانی">
+                        <figcaption>خرید سازمانی</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1 ">
+                    <a href="#"> <img src="images/pay.png" alt="خرید اقساطی">
+                        <figcaption>خرید اقساطی</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1">
+                    <a href="#"> <img src="images/sale.png" alt="حراج">
+                        <figcaption>حراج</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1 ">
+                    <a href="#"> <img src="images/wed2.png" alt="خرید جهیزیه">
+                        <figcaption>خرید جهیزیه</figcaption>
+                    </a>
+                </div>
+                <div class="col col-sm-3 col-lg-1">
+                    <a href="#">
+                        <img src="images/wed.png" alt="بیشتر">
+                        <figcaption>بیشتر</figcaption>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-4 offer-section">
+                <div class="col">
+                    <a href="#"><img src="images/11.webp" alt="11"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="images/22.webp" alt="22"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="images/33.webp" alt="33"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="images/44.webp" alt="44"></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer>
+        <div class="container-fluid footer-color">
+            <div class="container">
+                <hr>
+                <div class="row footer d-flex justify-content-between">
+                    <div class="col-auto"><img src="images/logo-fa.svg" alt=""></div>
+                    <div class="col-auto ttop-btn"><button class="btn  position-absolute">برگشت به بالا</button><i class="fa-solid fa-chevron-up"></i></div>
+                </div>
+                <div class="row info">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</li>
+                        <li class="list-inline-item">
+                            ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</li>
+                    </ul>
+                </div>
+                <div class="row d-none d-sm-none d-lg-flex  perks justify-content-between ">
+                    <div class="col-auto hover-1">
+                        <a href=""><img src="images/express-delivery.svg" alt="1">
+                            <figcaption>امکان تحویل اکپرس</figcaption>
+                        </a>
+                    </div>
+                    <div class="col-auto hover-1">
+                        <a href=""><img src="images/cash-on-delivery.svg" alt="2">
+                            <figcaption>امکان پرداخت در محل</figcaption>
+                        </a>
+                    </div>
+                    <div class="col-auto hover-1">
+                        <a href=""><img src="images/support.svg" alt="3">
+                            <figcaption>۷ روز هفته، ۲۴ ساعته</figcaption>
+                        </a>
+                    </div>
+                    <div class="col-auto hover-1">
+                        <a href=""><img src="images/days-return.svg" alt="4">
+                            <figcaption>۷ روز ضمانت بازگشت</figcaption>
+                        </a>
+                    </div>
+                    <div class="col-auto hover-1">
+                        <a href=""><img src="images/original-products.svg" alt="5">
+                            <figcaption>ضمانت اصل بودن کالا</figcaption>
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-none d-sm-flex row-cols-sm-2 row-cols-lg-4 more-info">
+                    <div class="col">
+                        <ul>
+                            <li class="li-title">با دیجی‌کالا</li>
+                            <li>اتاق خبر دیجی‌کالا</li>
+                            <li>فروش در دیجی‌کالا</li>
+                            <li>فرصت‌های شغلی</li>
+                            <li>تماس با دیجی‌کالا</li>
+                            <li>درباره دیجی‌کالا</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li class="li-title">خدمات مشتریان</li>
+                            <li>پاسخ به پرسش‌های متداول</li>
+                            <li>رویه‌های بازگرداندن کالا</li>
+                            <li>حریم خصوصی</li>
+                            <li>شرایط استفاده</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li class="li-title">راهنمای خرید از دیجی‌کالا</li>
+                            <li>نحوه ثبت سفارش</li>
+                            <li>رویه ارسال سفارش</li>
+                            <li>شیوه‌های پرداخت</li>
+                        </ul>
+                    </div>
+                    <div class="col contact-us">
+                        <ul>
+                            <li>همراه ما باشید!</li>
+                            <li>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa-brands fa-instagram"></i></li>
+                                    <li class="list-inline-item"><i class="fa-brands fa-twitter"></i></li>
+                                    <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i></li>
+                                    <li class="list-inline-item align-self-start"><img src="images/aparat.svg" alt="aparat"></li>
+                                </ul>
+                            </li>
+                            <li>با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</li>
+                            <li>
+                                <div class="row mb-3 me-5">
+                                    <div class="col-11"><input type="text" class="form-control myform" placeholder="ایمیل شما" aria-label="Recipient's username" aria-describedby="button-addon2"></div>
+                                    <div class="col-1 p-0"><button class="btn mybtn" type="button" id="button-addon2">ثبت</button></div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small-emailform">
+                    <div class="row d-sm-none mb-3 me-5">
+                        <div class="col-11"><input type="text" class="form-control myform" placeholder="ایمیل شما" aria-label="Recipient's username" aria-describedby="button-addon2"></div>
+                        <div class="col-1 p-0"><button class="btn mybtn" type="button" id="button-addon2">ثبت</button></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
