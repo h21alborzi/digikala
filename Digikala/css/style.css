@@ -102,10 +102,6 @@ ul li:last-child {
     pointer-events: none;
 }
 
-.slidercontainer {
-    padding-top: 110px;
-}
-
 .slider-col {
     padding: 0;
 }
@@ -204,6 +200,7 @@ ul li:last-child {
 .background-silhouette {
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-bottom: 10px;
     background-color: #ececec;
     border-radius: 100px;
 }
