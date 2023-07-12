@@ -1,5 +1,5 @@
 .myrow {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -8,6 +8,9 @@
 }
 
 .search-box input {
+    box-shadow: inset 0 0 10px #dfdfdf;
+    padding-right: 15px;
+    padding-bottom: 5px;
     height: 40px;
 }
 
@@ -20,7 +23,7 @@
 
 .location i {
     font-weight: bold;
-    color: #e6123d;
+    color: #e6123d !important;
 }
 
 .location-btn {
@@ -42,7 +45,7 @@
 .search-box input {
     border: none;
     border-radius: 5px;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(243, 241, 241);
     width: 500px;
     outline: none;
 }
@@ -55,6 +58,17 @@ ul li {
 
 ul li:last-child {
     border: none;
+}
+
+.navbar-collapse li {
+    position: relative;
+}
+
+.navbar-collapse i {
+    color: #8a8a8a;
+    position: absolute;
+    left: 5px;
+    top: 13px;
 }
 
 .btn {
@@ -99,10 +113,11 @@ ul li:last-child {
 .services {
     margin: 0 auto;
     text-align: justify;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .services img {
+    padding-top: 10px;
     display: block;
     margin: 0 auto;
     width: 50%;
@@ -153,9 +168,23 @@ ul li:last-child {
 }
 
 .footer i {
-    top: 10px;
-    right: 115px;
+    font-size: 12px;
+    top: 8px;
+    right: 110px;
     position: relative;
+}
+
+#btn-back-to-top {
+    text-align: start;
+}
+
+.ttop-btn:hover {
+    color: whitesmoke;
+}
+
+#btn-back-to-top:hover {
+    background-color: #dd4765;
+    color: whitesmoke;
 }
 
 .ttop-btn {
@@ -172,9 +201,25 @@ ul li:last-child {
     text-align: center;
 }
 
+.background-silhouette {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ececec;
+    border-radius: 100px;
+}
+
 .perks a {
     text-decoration: none;
     color: rgb(22, 16, 62);
+}
+
+.banner {
+    padding-top: 10px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 20px;
 }
 
 .more-info li {
