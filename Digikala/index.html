@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/86c7221215.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header style="height: 117px;">
+<body class="position-absolute">
+    <header class="headerbar" style="height: 109px;">
         <div class="container-fluid position-fixed z-3 bg-white shadow-lg">
             <div class="container-fluid position-relative">
                 <div class="row myrow d-none d-lg-flex  justify-content-end">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="row secondrow justify-content-end">
                     <div class="col">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-lg navbar-light pt-0">
                             <i class="fa-solid fa-list fa-rotate-180 ps-3 pb-1 d-none d-lg-block"></i>
                             <a class="navbar-brand " href="#">دسته بندی کالاها</a>
 
@@ -92,7 +92,7 @@
                                     </li>
                                 </ul>
                                 <div class="col location text-end">
-                                    <button class="button btn location-btn dropdown-toggle-location position-relative hover-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown-location" aria-expanded="false"><span>ارسال به
+                                    <button onclick="toggleMenu()" class="button btn location-btn dropdown-toggle-location position-relative hover-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown-location" aria-expanded="false"><span>ارسال به
                       تهران</span><i class="fa-solid fa-location-dot"></i>
                     <div class="location-menu ">
                       <ul class="dropdown-menu-location" aria-labelledby="dropdownMenuButton">
@@ -107,7 +107,36 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid slidercontainer">
+
+    <div class="the-big z-3" id="menu-box">
+        <div class="container menu-container shadow">
+            <div class="row row-cols-2 address-menu-title">
+                <div class="col-auto"><span class="menu-title fw-bold">انتخاب آدرس</span></div>
+                <a href="#"></a>
+                <div class="col-auto">
+                    <a onclick="toggleMenu()" href="#"><i class="fa-solid fa-x "></i></a></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 pb-3">
+                    <input type="radio" name="checkbox" class="check" id="radio1" checked/>
+                    <label for="radio1">
+                <span class="addresss">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  طراحان گرافیک است1</span> </label>
+                </div>
+                <div class="col-12 pb-3">
+                    <input type="radio" name="checkbox" class="check" id="radio2" checked/>
+                    <label for="radio2">
+                <span class="addresss">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با  طراحان گرافیک است2</span> </label>
+                </div>
+                <div class="col-12">
+                    <a href="#" class="text-decoration-none"> <i class="fa-solid fa-plus"></i>
+                        <span class="add-adress">افزودن آدرس</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid slidercontainer z-2">
         <div class="row slider-row">
             <div class="col slider-col">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -216,67 +245,67 @@
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-4 services">
-                <div class="col col-sm-3 col-lg-2">
+            <div class="row row-cols-3 row-cols-lg-4 services services-icon-size">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#"> <img src="images/a.webp" alt="گیم نت">
                         <figcaption>موبایل</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2 ">
+                <div class="col col-sm-4 col-lg-2 ">
                     <a href="#"> <img src="images/b.webp" alt="هدیه دیجی‌پلاس">
                         <figcaption>گجت‌ها</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#"> <img src="images/c.webp" alt="دیجی‌کالا جت">
                         <figcaption>لوازم خانه</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#"> <img src="images/d.webp" alt="خرید سازمانی">
                         <figcaption>پوشاک</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2 ">
+                <div class="col col-sm-4 col-lg-2 ">
                     <a href="#"> <img src="images/e.webp" alt="خرید اقساطی">
                         <figcaption>سوپرمارکت</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#"> <img src="images/f.webp" alt="حراج">
                         <figcaption>لوازم تحریر</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2 ">
+                <div class="col col-sm-4 col-lg-2 ">
                     <a href="#"> <img src="images/g.webp" alt="خرید جهیزیه">
                         <figcaption>اسباب بازی</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#">
                         <img src="images/h.webp" alt="بیشتر">
                         <figcaption>لوازم آرایشی</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#">
                         <img src="images/l.webp" alt="بیشتر">
                         <figcaption>وسایل پیکنیک</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#">
                         <img src="images/m.webp" alt="بیشتر">
                         <figcaption>ابزار</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#">
                         <img src="images/n.webp" alt="بیشتر">
                         <figcaption>حمل و نقل</figcaption>
                     </a>
                 </div>
-                <div class="col col-sm-3 col-lg-2">
+                <div class="col col-sm-4 col-lg-2">
                     <a href="#">
                         <img src="images/o.webp" alt="بیشتر">
                         <figcaption>بومی و محلی</figcaption>
@@ -285,7 +314,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row row-cols-2 banner">
+            <div class="row row-cols-1 row-cols-lg-2 banner">
                 <div class="col">
                     <a href="#"><img src="images/111.webp" alt="11"></a>
                 </div>

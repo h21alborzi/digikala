@@ -9,3 +9,13 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// ===========================================================================================
+
+function toggleMenu() {
+    var menuBox = document.getElementById('menu-box');
+    if (menuBox.style.display == "flex") { // if is menuBox displayed, hide it
+        menuBox.style.display = "none";
+    } else { // if is menuBox hidden, display it
+        menuBox.style.display = "flex";
+    }
+}
